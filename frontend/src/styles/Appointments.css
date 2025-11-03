@@ -1,0 +1,68 @@
+.appointments-page {
+  animation: fadeIn 0.3s ease-in;
+}
+
+.filters {
+  display: flex;
+  gap: 12px;
+  flex: 1;
+  max-width: 600px;
+}
+
+.filters .form-input,
+.filters .form-select {
+  flex: 1;
+}
+
+.status-select {
+  padding: 6px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.status-select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.status-info {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.status-success {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.status-warning {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.status-danger {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.status-secondary {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    max-width: none;
+  }
+
+  .page-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
